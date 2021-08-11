@@ -13,8 +13,8 @@ namespace Product.ApiRest.Model
 		[Column("name")]
 		public string Name { get; set; }
 
-		[Column("sobre_name")]
-		public string  SobreName { get; set; }
+		[Column("type")]
+		public string  Type { get; set; }
 
 		[Column("value")]
 		public decimal Value { get; set; }

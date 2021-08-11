@@ -38,7 +38,7 @@ namespace Product.ApiRest
 						Description = "API RESTful de produtos'",
 						Contact = new OpenApiContact
 						{
-							Name = "Leandro Costa",
+							Name = "Magno Moreira",
 							Url = new Uri("https://github.com/magnomoreira")
 						}
 					});
