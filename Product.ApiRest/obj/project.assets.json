@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\dev\\ApiRest-Product\\Product.ApiRest\\Product.ApiRest\\Product.ApiRest.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\dev\\ApiRest-Product\\Product.ApiRest\\Product.ApiRest.csproj",
       "projectName": "Product.ApiRest",
-      "projectPath": "C:\\Users\\Administrador\\Documents\\dev\\ApiRest-Product\\Product.ApiRest\\Product.ApiRest\\Product.ApiRest.csproj",
+      "projectPath": "C:\\Users\\Administrador\\Documents\\dev\\ApiRest-Product\\Product.ApiRest\\Product.ApiRest.csproj",
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador\\Documents\\dev\\ApiRest-Product\\Product.ApiRest\\Product.ApiRest\\obj\\",
+      "outputPath": "C:\\Users\\Administrador\\Documents\\dev\\ApiRest-Product\\Product.ApiRest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
