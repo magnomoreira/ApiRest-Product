@@ -3,7 +3,6 @@ using Product.ApiRest.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Product.ApiRest.Repository
 {
@@ -67,7 +66,7 @@ namespace Product.ApiRest.Repository
 			return produto;
 		}
 
-		public void Delite( int id)
+		public void Delete( int id)
 		{
 			var produtoDelite = _application.Produtos.SingleOrDefault(p => p.Id.Equals(id));
 
@@ -87,24 +86,24 @@ namespace Product.ApiRest.Repository
 			}
 		}
 
-		public bool Disable(Produto produto)
-		{
-			var result = _application.Produtos.SingleOrDefault(p => p.Id.Equals(produto.Id));
+		//public bool Disable(Produto produto)
+		//{
+		//	var result = _application.Produtos.SingleOrDefault(p => p.Id.Equals(produto.Id));
 
-			if( result != null)
-			{
-				try
-				{
-					produto.Enable = false;
+		//	if( result != null)
+		//	{
+		//		try
+		//		{
+		//			produto.Enable = false;
 
-				}
-				catch (Exception)
-				{
+		//		}
+		//		catch (Exception)
+		//		{
 
-					throw;
-				}
-			}
-			return true;
-		}
+		//			throw;
+		//		}
+		//	}
+		//	return true;
+		//}
 	}
 }

@@ -6,17 +6,18 @@ namespace Product.ApiRest.Model
 	[Table("produto")]
 	public class Produto
 	{
-		[Key]
+	
 		[Column("id")]
 		public int Id { get; set; }
+
 		[Column("name")]
-
 		public string Name { get; set; }
-		[Column("type")]
 
-		public string  Type { get; set; }
-		[Column("enable")]
+		[Column("sobre_name")]
+		public string  SobreName { get; set; }
 
-		public bool Enable { get; set; }
+		[Column("value")]
+		public decimal Value { get; set; }
+
 	}
 }

@@ -1,47 +1,87 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Product.ApiRest.Model;
+using Product.ApiRest.Repository;
+using System.Collections.Generic;
 
 namespace Product.ApiRest.Controller
 {
 	[ApiController]
-	[Controller]
+	[Route("api/[controller]")]
 	public class ProdutoController : ControllerBase
 	{
+		private readonly ILogger<ProdutoController> _logger;
+		private  ProdutoRepository _repository;
+
+		public ProdutoController(ILogger<ProdutoController> logger, ProdutoRepository repository)
+		{
+			_logger = logger;
+			_repository = repository;
+		}
 
 		[HttpGet]
+		[ProducesResponseType((200), Type = typeof(List<Produto>))]
+		[ProducesResponseType(204)]
+		[ProducesResponseType(400)]
+		[ProducesResponseType(401)]
 		public IActionResult FindAll()
 		{
-			return Ok();
+			var produto = _repository.FindAll();
+			return Ok(produto);
 		}
 
 		[HttpGet("{id}")]
+		[ProducesResponseType((200), Type = typeof(List<Produto>))]
+		[ProducesResponseType(204)]
+		[ProducesResponseType(400)]
+		[ProducesResponseType(401)]
 		public IActionResult FindById(int id)
 		{
-			return Ok();
+
+			var produtoId = _repository.FindById(id);
+			if (produtoId != null) return NotFound();
+			return Ok(produtoId);
 		}
 
 		[HttpPost]
-		public IActionResult Create()
+		[ProducesResponseType((200), Type = typeof(List<Produto>))]
+		[ProducesResponseType(400)]
+		[ProducesResponseType(401)]
+		public IActionResult Create([FromBody] Produto produto)
 		{
-			return Ok();
+			if (produto == null) return BadRequest();
+			var produtoCreate = _repository.Create(produto);
+			return Ok(produtoCreate);
 		}
 		
 		[HttpPut("{id}")]
-		public IActionResult Update(int id )
+		[ProducesResponseType((200), Type = typeof(List<Produto>))]
+		
+		[ProducesResponseType(400)]
+		[ProducesResponseType(401)]
+		public IActionResult Update([FromBody] Produto produto)
 		{
+			var produtoUpdate = _repository.Update(produto);
 			return Ok();
 		}
 
-		[HttpPatch("{id}")]
+		//[HttpPatch("{id}")]
 
-		public IActionResult Patch(int id)
-		{
-			return Ok();
-		}
+		//public IActionResult Patch(Produto produto)
+		//{
+		//	var produtoId = _repository.Disable(produto);
+		//	return Ok(produtoId);
+		//}
 
 		[HttpDelete("{id}")]
-		public IActionResult Delite(int id)
+		[ProducesResponseType(204)]
+		[ProducesResponseType(400)]
+		[ProducesResponseType(401)]
+		public IActionResult Delete(int id)
 		{
-			return Ok();
+			_repository.Delete(id);
+
+			return NoContent();
 		}
 	}
 }
