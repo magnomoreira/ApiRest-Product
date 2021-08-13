@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UsL53WWvrKufXsJpTufektgw0hCuorFXtCvOR6dQRUcr61yKq3fBX0DQkKFnA2bjirnWWc9uUXDni+iFQD6Lhw==",
+  "dgSpecHash": "nEK1ewo/edcbXlF2eQJpDHJdv+3/iAdW5g+aqMUD+ktlF5jRXDCWuiZZChl/0Kd5LrFWVCy9EPs0K0rgjKKYRw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\Documents\\dev\\ApiRest-Product\\Product.ApiRest\\Product.ApiRest.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,6 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\mysqlconnector\\0.69.10\\mysqlconnector.0.69.10.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.2.6\\pomelo.entityframeworkcore.mysql.3.2.6.nupkg.sha512",
