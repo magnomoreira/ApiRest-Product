@@ -1,7 +1,0 @@
-services:
-  product-api-rest:
-    build:
-      context: C:\Users\Administrador\Documents\dev\ApiRest-Product
-      dockerfile: Product.ApiRest/Dockerfile
-    image: productapirest
-version: '3.4'
